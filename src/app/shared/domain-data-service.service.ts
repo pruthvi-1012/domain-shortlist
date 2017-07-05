@@ -11,7 +11,7 @@ export class DomainDataServiceService {
 
 getDomainData(){
 
-//  return this.http.get('./data.json').map((res:Response) => res.json());
+// To do : Change API call here to load data from live API
   return this.http.get("app/shared/data.json").map((res:Response) => res.json());
 }
 }
