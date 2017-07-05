@@ -1,4 +1,45 @@
+<div class="row">
+            <div class="col-12">
+                <header class="page cfix">
+                    <div class="left">
+                        <h1>Shortlist</h1>
+                    </div>
+                </header>
+            </div>
+</div>
 
-<div *ngFor = "let domainData of domainData">
-  {{domanData.AdId}}
+<div id="shortlist-grid" class="row" style="display: block;">
+    
+<ul class="cfix">        
+
+<div *ngFor="let data of datas">
+  <li class="card listing shortlist clickable">
+
+ 
+      <div class="media-wrap crop-image" style="overflow: hidden; position: relative;">
+        <img src={{data.Image}} alt={{data.Address}} class="" style="position: absolute; width: 320px; height: auto; top: 0px; left: 0px;">
+      </div>
+
+    <div class="outer-wrap">
+      <div class="inner-wrap">
+
+
+        <div class="price-wrap">
+          <h4 class="truncate-single">{{data.Status}}</h4>
+        </div>
+        <ul class="features">
+          <li class="truncate-single">{{data.Rooms}}</li>
+            <li class="address truncate-single">{{data.Address}}</li>
+        </ul>
+
+
+      </div>
+
+      <div class="toolbar-wrap">
+      </div>
+    </div>
+
+    </li>
+</div>
+</ul>
 </div>

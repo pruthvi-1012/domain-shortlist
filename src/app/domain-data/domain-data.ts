@@ -6,5 +6,4 @@ export class DomainData {
   Address: string;
   Inspection: string;
   Auction: string;
-
 }

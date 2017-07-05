@@ -11,12 +11,12 @@ import { DomainData } from "./domain-data";
 })
 export class DomainDataComponent{
 
-  domainData: Array<DomainData>;
+  datas: Array<DomainData>;
 
   constructor(private domainDataService: DomainDataServiceService){
 
     this.domainDataService.getDomainData().subscribe(data => {
-      this.domainData= data;
+      this.datas=data;
     })
   }
 }
